@@ -25,8 +25,9 @@ const questions = [{
     }, 
     {
         name: "license",
-        type: "input",
-        message: "What kind of license should your project have?"
+        type: "list",
+        message: "What kind of license should your project have?",
+        choices: ["Apache License 2.0", "GNU GPLv3", "MIT", "ISC"]
     },
     {
         name: "dependency",
@@ -55,9 +56,9 @@ function writeToFile() {
 ## Table of Contents
 - [Description](#description)
 - [Commands](#commands)
-- [Need To Know](#needToKnow)
+- [Need-To-Know](#need-to-know)
 - [Contribution](#contribution)
-- [Credit](#contribution)
+- [Credit](#credit)
 - [License](#license)
 
 ## Description
@@ -67,15 +68,15 @@ ${description}
 - To install dependencies, use ${dependency}
 - To run tests, use ${runTests}
     
-## Need To Know
+## Need-To-Know
 ${needToKnow}
     
 ## Contribution
 ${contribution}
     
 ## Credit
-- GitHub: ${gitHubName}
-- Email: ${email}
+- GitHub: [${gitHubName}](https://github.com/${gitHubName})
+- Email: [${email}](${email})
         
 ## License
 This project has the ${license} license.`;
